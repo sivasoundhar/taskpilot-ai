@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# Env
+.env
+
+# Workspace sandbox (agent-written files)
+workspace/
+
+# Run history DB (real usage data, not project source)
+data/
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Internal build docs -- kept locally for reference, not published to
+# the resume-facing GitHub repo. Untracked, not deleted -- still on disk
+# if ever needed again.
+CLAUDE.md
+docs/DEMO_SCRIPT.md
+docs/DEVLOG.md
+
+# Personal interview prep -- never tracked in the first place, not repo content.
+docs/INTERVIEW_PREP.md

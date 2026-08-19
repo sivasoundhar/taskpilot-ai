@@ -1,0 +1,33 @@
+# --- Agent framework ---
+langgraph>=0.2.0
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-groq>=0.2.0
+# Local fallback: if Groq's call fails (network/TLS/rate-limit/outage), the
+# agent retries against a local Ollama model instead of just failing the
+# whole task. See src/agent/llm_provider.py.
+langchain-ollama>=0.2.0
+
+# --- MCP (Model Context Protocol) ---
+mcp>=1.0.0
+
+# --- LLM providers ---
+groq>=0.11.0
+
+# --- Web Search (Tavily, optional primary backend) ---
+tavily-python>=0.7.0
+
+# --- Backend ---
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+sse-starlette>=2.1.0
+
+# --- Config ---
+pydantic>=2.9.0
+pydantic-settings>=2.5.0
+python-dotenv>=1.0.1
+
+# --- Testing ---
+pytest>=8.3.0
+pytest-asyncio>=0.24.0
+httpx>=0.27.0
